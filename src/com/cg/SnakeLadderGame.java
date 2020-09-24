@@ -1,4 +1,5 @@
 package com.cg;
+import java.util.Random;
 
 public class SnakeLadderGame {
 
@@ -11,6 +12,10 @@ public class SnakeLadderGame {
      System.out.println("No of player : " + playerCount);
      System.out.println("Initial position of the player :" + STARTING_POSITION);
      
+     Random r = new Random();
+     int number_on_Die =  r.nextInt(6) + 1 ;
+  
+     System.out.println("Number got from rolling the die is "+ number_on_Die);
 	}
 
 }
