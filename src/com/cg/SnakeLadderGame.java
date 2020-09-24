@@ -76,5 +76,9 @@ public class SnakeLadderGame {
     	 
 	}
      System.out.println("The dice was played " + count +" times");
+     if(playerFlag == 0)
+    	 System.out.println("1st Player won the game");
+     else
+    	 System.out.println("2nd Player won the game.");
   }
 }
