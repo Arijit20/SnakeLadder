@@ -18,7 +18,7 @@ public class SnakeLadderGame {
      System.out.println("No of player : " + playerCount);
      System.out.println("Initial position of the player :" + STARTING_POSITION);
      
-     while(currentPosition < WINNING_POSITION) {
+     while(currentPosition != WINNING_POSITION) {
      Random r = new Random();
      int number_on_Die =  r.nextInt(6) + 1 ;
   
@@ -31,6 +31,8 @@ public class SnakeLadderGame {
     	 break;
      case LADDER:
     	 currentPosition += number_on_Die;
+    	 if(currentPosition > WINNING_POSITION)
+    		 currentPosition -= number_on_Die;
     	 break;
     default:{
     	currentPosition -= number_on_Die;
