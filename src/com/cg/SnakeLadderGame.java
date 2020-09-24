@@ -14,11 +14,14 @@ public class SnakeLadderGame {
 		// TODO Auto-generated method stub
 	 int playerCount = 1;
 	 int currentPosition = 0;
+	 int count = 0;
      System.out.println("Starting the game");
      System.out.println("No of player : " + playerCount);
      System.out.println("Initial position of the player :" + STARTING_POSITION);
      
      while(currentPosition != WINNING_POSITION) {
+    	 count++;
+    	 
      Random r = new Random();
      int number_on_Die =  r.nextInt(6) + 1 ;
   
@@ -42,5 +45,6 @@ public class SnakeLadderGame {
      }
      System.out.println("New Position is : " + currentPosition);
 	}
+     System.out.println("The dice was played " + count +" times");
   }
 }
